@@ -1,6 +1,6 @@
 #Importing the Library
 
-import numpy as np
+
 import pandas as pd
 from flask import request
 from flask import Flask, jsonify
@@ -40,4 +40,4 @@ def diabetesPrediction():
  
             return jsonify(final_predictions) 
 
-app.run(debug=False,host = "localhost", port = 5001)   
+app.run(debug=False,host = "localhost", port = 5002)   

@@ -33,7 +33,7 @@ def diabetesPrediction():
      
             test = df.iloc[:,:]
 
-            model = joblib.load('log_model_diabetes_prediction') 
+            model = joblib.load('log_model_diabetes_prediction') # This can be your Model Registry/or any cloud location
 
             output = model.predict(test)
             final_predictions = pd.DataFrame(list(output),columns = ["Your Diabetese Test Is"]).to_dict(orient="records")

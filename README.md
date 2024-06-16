@@ -1,5 +1,3 @@
-# BITS-MLops
-
 # Docker Image Creation for Flask
 
 
@@ -23,10 +21,6 @@ https://github.com/RajanKumarYadav/BITS-MLOps
 
 ```bash
 docker build -t diabetes_prediction_app:0.0.1 .
-```
-
-```bash
-docker images
 ```
 
 

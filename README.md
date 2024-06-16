@@ -1,4 +1,4 @@
-# Docker Image Creation for Flask
+# Docker Image Creation for Flask ML APP
 
 
 ## Workflows
@@ -14,9 +14,6 @@
 
 Clone the repository
 
-```bash
-https://github.com/RajanKumarYadav/BITS-MLOps
-```
 ### STEP 01- Create a docker Image with tag
 
 ```bash

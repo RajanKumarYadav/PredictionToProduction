@@ -73,3 +73,34 @@ docker rm -f (docker ps -a | awk '{print$1}')
 # To delete a specific image
 docker image rm <image_name>
 ```
+
+### Make your docker images availalbe using Registry/DockerHub
+
+
+```bash
+# Tag/rename your image with your username delete a specific image
+docker tag diabetes_prediction_app:0.0.1 <account_namespace_in_DockerHub>/diabetes_prediction_app:0.0.1
+```
+
+```bash
+# Push the specific image
+docker push <account_namespace_in_DockerHub>/diabetes_prediction_app:0.0.1
+```
+
+```bash
+# Pull a specific image
+docker pull <account_namespace_in_DockerHub>/diabetes_prediction_app:0.0.1
+```
+
+### Make your docker images availalbe using tar file
+
+```bash
+# Save specific image to tar file
+docker save -o image.tar <image_name>:<tag>
+```
+
+```bash
+# Load specific image from tar file
+docker load -i image.tar <image_name>:<tag>
+```
+
